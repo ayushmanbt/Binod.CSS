@@ -1,0 +1,501 @@
+@import "_variables.scss";
+
+//default_set_reset
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e2e2;
+}
+
+button{
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+//classwise_distribution
+@each $class in $primary_classes {
+    p.#{$class}{
+        font-size: $primary_font_size;
+    }
+
+    h1.#{$class},
+    h2.#{$class},
+    h3.#{$class},
+    h4.#{$class},
+    h5.#{$class},
+    h6.#{$class}{
+        font-size: $primary_font_size_plus;
+    }
+
+    //padding classes
+    .p-#{$class}{
+        padding: $primary_mp;
+    }
+    .pl-#{$class}{
+        padding-left: $primary_mp;
+    }
+    .pr-#{$class}{
+        padding-right: $primary_mp;
+    }
+    .pt-#{$class}{
+        padding-top: $primary_mp;
+    }
+    .pb-#{$class}{
+        padding-bottom: $primary_mp;
+    }
+    .px-#{$class}{
+        @extend .pl-#{$class};
+        @extend .pr-#{$class};
+    }
+    .py-#{$class}{
+        @extend .pt-#{$class};
+        @extend .pb-#{$class};
+    }
+
+    //margin classes
+    .m-#{$class}{
+        margin: $primary_mp;
+    }
+    .ml-#{$class}{
+        margin-left: $primary_mp;
+    }
+    .mr-#{$class}{
+        margin-right: $primary_mp;
+    }
+    .mt-#{$class}{
+        margin-top: $primary_mp;
+    }
+    .mb-#{$class}{
+        margin-bottom: $primary_mp;
+    }
+    .mx-#{$class}{
+        margin-left: $primary_mp;
+        margin-right: $primary_mp;
+    }
+    .my-#{$class}{
+        margin-top: $primary_mp;
+        margin-bottom: $primary_mp;
+    }
+
+    .bg-#{$class}{
+        background: $primary_color;
+    }
+
+    button.bg-#{$class}:hover{
+        background: darken($color: $primary_color, $amount: 20) ;
+    }
+
+    .col-#{$class}{
+        color: $primary_text_color;
+    }
+}
+
+
+@each $class in $secondary_classes {
+    p.#{$class}{
+        font-size: $secondary_font_size;
+    }
+
+    h1.#{$class},
+    h2.#{$class},
+    h3.#{$class},
+    h4.#{$class},
+    h5.#{$class},
+    h6.#{$class}{
+        font-size: $secondary_font_size_plus;
+    }
+
+    //padding classes
+    .p-#{$class}{
+        padding: $secondary_mp;
+    }
+    .pl-#{$class}{
+        padding-left: $secondary_mp;
+    }
+    .pr-#{$class}{
+        padding-right: $secondary_mp;
+    }
+    .pt-#{$class}{
+        padding-top: $secondary_mp;
+    }
+    .pb-#{$class}{
+        padding-bottom: $secondary_mp;
+    }
+    .px-#{$class}{
+        padding-left: $secondary_mp;
+        padding-right: $secondary_mp;
+    }
+    .py-#{$class}{
+        padding-top: $secondary_mp;
+        padding-bottom: $secondary_mp;
+    }
+
+    //margin classes
+    .m-#{$class}{
+        margin: $secondary_mp;
+    }
+    .ml-#{$class}{
+        margin-left: $secondary_mp;
+    }
+    .mr-#{$class}{
+        margin-right: $secondary_mp;
+    }
+    .mt-#{$class}{
+        margin-top: $secondary_mp;
+    }
+    .mb-#{$class}{
+        margin-bottom: $secondary_mp;
+    }
+    .mx-#{$class}{
+        margin-left: $secondary_mp;
+        margin-right: $secondary_mp;
+    }
+    .my-#{$class}{
+        margin-top: $secondary_mp;
+        margin-bottom: $secondary_mp;
+    }
+
+    .bg-#{$class}{
+        background: $secondary_color;
+    }
+
+    button.bg-#{$class}:hover{
+        background: lighten($color: $secondary_color, $amount: 20) ;
+    }
+
+    .col-#{$class}{
+        color: $secondary_text_color;
+    }
+}
+
+
+@each $class in $tertiary_classes {
+    p.#{$class}{
+        font-size: $tertiary_font_size;
+    }
+    h1.#{$class},
+    h2.#{$class},
+    h3.#{$class},
+    h4.#{$class},
+    h5.#{$class},
+    h6.#{$class}{
+        font-size: $tertiary_font_size_plus;
+    }
+
+    //padding classes
+    .p-#{$class}{
+        padding: $tertiary_mp;
+    }
+    .pl-#{$class}{
+        padding-left: $tertiary_mp;
+    }
+    .pr-#{$class}{
+        padding-right: $tertiary_mp;
+    }
+    .pt-#{$class}{
+        padding-top: $tertiary_mp;
+    }
+    .pb-#{$class}{
+        padding-bottom: $tertiary_mp;
+    }
+    .px-#{$class}{
+        padding-left: $tertiary_mp;
+        padding-right: $tertiary_mp;
+    }
+    .py-#{$class}{
+        padding-top: $tertiary_mp;
+        padding-bottom: $tertiary_mp;
+    }
+
+    //margin classes
+    .m-#{$class}{
+        margin: $tertiary_mp;
+    }
+    .ml-#{$class}{
+        margin-left: $tertiary_mp;
+    }
+    .mr-#{$class}{
+        margin-right: $tertiary_mp;
+    }
+    .mt-#{$class}{
+        margin-top: $tertiary_mp;
+    }
+    .mb-#{$class}{
+        margin-bottom : $tertiary_mp;
+    }
+    .mx-#{$class}{
+        margin-left: $tertiary_mp;
+        margin-right: $tertiary_mp;
+    }
+    .my-#{$class}{
+        margin-top: $tertiary_mp;
+        margin-bottom: $tertiary_mp;
+    }
+
+    .bg-#{$class}{
+        background: $tertiary_color;
+    }
+
+    button.bg-#{$class}:hover{
+        background: lighten($color: $tertiary_color, $amount: 20) ;
+    }
+
+    .col-#{$class}{
+        color: $tertiary_text_color;
+    }
+}
+
+
+@each $class in $quaternary_classes {
+    p.#{$class}{
+        font-size: $quaternary_font_size;
+    }
+    h1.#{$class},
+    h2.#{$class},
+    h3.#{$class},
+    h4.#{$class},
+    h5.#{$class},
+    h6.#{$class}{
+        font-size: $quaternary_font_size_plus;
+    }
+
+    //padding classes
+    .p-#{$class}{
+        padding: $quaternary_mp;
+    }
+    .pl-#{$class}{
+        padding-left: $quaternary_mp;
+    }
+    .pr-#{$class}{
+        padding-right: $quaternary_mp;
+    }
+    .pt-#{$class}{
+        padding-top: $quaternary_mp;
+    }
+    .pb-#{$class}{
+        padding-bottom: $quaternary_mp;
+    }
+    .px-#{$class}{
+        padding-left: $quaternary_mp;
+        padding-right: $quaternary_mp;
+    }
+    .py-#{$class}{
+        padding-top: $quaternary_mp;
+        padding-bottom: $quaternary_mp;
+    }
+    
+    //margin classes
+    .m-#{$class}{
+        margin: $quaternary_mp;
+    }
+    .mt-#{$class}{
+        margin-top: $quaternary_mp;
+    }
+    .mb-#{$class}{
+        margin-bottom: $quaternary_mp;
+    }
+    .ml-#{$class}{
+        margin-left: $quaternary_mp;
+    }
+    .mr-#{$class}{
+        margin-right: $quaternary_mp;
+    }
+    .mx-#{$class}{
+        margin-left: $quaternary_mp;
+        margin-right: $quaternary_mp;
+    }
+    .my-#{$class}{
+        margin-top: $quaternary_mp;
+        margin-bottom: $quaternary_mp;
+    }
+
+    .bg-#{$class}{
+        background: $tertiary_color;
+    }
+
+    button.bg-#{$class}:hover{
+        background: darken($color: $quaternary_color, $amount: 20) ;
+    }
+
+    .col-#{$class}{
+        color: $quaternary_text_color;
+    }
+}
+
+
+@each $class in $quinary_classes {
+    p.#{$class}{
+        font-size: $quinary_font_size;
+    }
+    h1.#{$class},
+    h2.#{$class},
+    h3.#{$class},
+    h4.#{$class},
+    h5.#{$class},
+    h6.#{$class}{
+        font-size: $quinary_font_size_plus;
+    }
+
+    //padding classes
+    .p-#{$class}{
+        padding: $quinary_mp;
+    }
+    .pl-#{$class}{
+        padding-left: $quinary_mp;
+    }
+    .pr-#{$class}{
+        padding-right: $quinary_mp;
+    }
+    .pt-#{$class}{
+        padding-top: $quinary_mp;
+    }
+    .pb-#{$class}{
+        padding-bottom: $quinary_mp;
+    }
+    .px-#{$class}{
+        padding-left: $quinary_mp;
+        padding-right: $quinary_mp;
+    }
+    .py-#{$class}{
+        padding-top: $quinary_mp;
+        padding-bottom: $quinary_mp;
+    }
+
+    //margin classes
+    .m-#{$class}{
+        margin: $quinary_mp;
+    }
+    .ml-#{$class}{
+        margin-left: $quinary_mp;
+    }
+    .mr-#{$class}{
+        margin-right: $quinary_mp;
+    }
+    .mt-#{$class}{
+        margin-top: $quinary_mp;
+    }
+    .mb-#{$class}{
+        margin-bottom: $quinary_mp;
+    }
+    .mx-#{$class}{
+        margin-left: $quinary_mp;
+        margin-right: $quinary_mp;
+    }
+    .my-#{$class}{
+        margin-top: $quinary_mp;
+        margin-bottom: $quinary_mp;
+    }
+
+    .bg-#{$class}{
+        background: $quinary_color;
+    }
+
+    button.bg-#{$class}:hover{
+        background: darken($color: $quinary_color, $amount: 20) ;
+    }
+
+    .col-#{$class}{
+        color: $quinary_text_color;
+    }
+}
+
+@each $class in $senary_classes {
+    p.#{$class}{
+        font-size: $senary_font_size;
+    }
+    h1.#{$class},
+    h2.#{$class},
+    h3.#{$class},
+    h4.#{$class},
+    h5.#{$class},
+    h6.#{$class}{
+        font-size: $senary_font_size_plus;
+    }
+    //padding classes
+    .p-#{$class}{
+        padding: $senary_mp;
+    }
+    .pl-#{$class}{
+        padding-left: $senary_mp;
+    }
+    .pr-#{$class}{
+        padding-right: $senary_mp;
+    }
+    .pt-#{$class}{
+        padding-top: $senary_mp;
+    }
+    .pb-#{$class}{
+        padding-bottom: $senary_mp;
+    }
+    .px-#{$class}{
+        padding-left: $senary_mp;
+        padding-right: $senary_mp;
+    }
+    .py-#{$class}{
+        padding-top: $senary_mp;
+        padding-bottom: $senary_mp;
+    }
+
+    //margin classes
+    .m-#{$class}{
+        margin: $senary_mp;
+    }
+    .ml-#{$class}{
+        margin-left: $senary_mp;
+    }
+    .mr-#{$class}{
+        margin-right: $senary_mp;
+    }
+    .mt-#{$class}{
+        margin-top: $senary_mp;
+    }
+    .mb-#{$class}{
+        margin-bottom: $senary_mp;
+    }
+    .mx-#{$class}{
+        margin-left: $senary_mp;
+        margin-right: $senary_mp;
+    }
+    .my-#{$class}{
+        margin-top: $senary_mp;
+        margin-bottom: $senary_mp;
+    }
+
+    .bg-#{$class}{
+        background: $senary_color;
+    }
+
+    button.bg-#{$class}:hover{
+        background: darken($color: $senary_color, $amount: 20) ;
+    }
+
+    .col-#{$class}{
+        color: $senary_text_color;
+    }
+}

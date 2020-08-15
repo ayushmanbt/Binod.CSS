@@ -1,0 +1,50 @@
+//The Six Names
+$names: "primary", "secondary", "tertiary", "quaternary", "quinary", "senary";
+
+//The six different "binod" types
+$primary_classes:"binod";
+$secondary_classes:"Binod","bInod","biNod","binOd","binoD";
+$tertiary_classes:"BInod","BiNod","BinOd","BinoD","bINod","bInOd","bInoD","biNoD","binOD","biNOd";
+$quaternary_classes:"BINod","BInOd","BInoD","BiNOd","BiNoD","bINOd","bINoD","biNOD","BinOD","bInOD";
+$quinary_classes: "BINOd", "bINOD", "BiNOD", "BInOD", "BINoD";
+$senary_classes:"BINOD";
+
+//font sizes for small elements
+$primary_font_size: 1rem;
+$secondary_font_size: 1.2rem;
+$tertiary_font_size: 1.4rem;
+$quaternary_font_size: 1.75rem;
+$quinary_font_size: 2rem;
+$senary_font_size: 3rem;
+
+//font sizes for larger elements
+$primary_font_size_plus: 2rem;
+$secondary_font_size_plus: 3rem;
+$tertiary_font_size_plus: 3.75rem;
+$quaternary_font_size_plus: 4.25rem;
+$quinary_font_size_plus: 5rem;
+$senary_font_size_plus: 6rem;
+
+//margin padding
+$primary_mp: 5px;
+$secondary_mp: 15px;
+$tertiary_mp: 25px;
+$quaternary_mp: 30px;
+$quinary_mp: 40px;
+$senary_mp: 50px;
+
+//bg color
+$primary_color: #74B9FF;
+$secondary_color: #111f42;
+$tertiary_color: #40c7a7;
+$quaternary_color: #02382b;
+$quinary_color: black;
+$senary_color: white;
+
+//text color
+$primary_text_color: #0c2541;
+$secondary_text_color: #74B9FF;
+$tertiary_text_color: #082c24;
+$quaternary_text_color: #40c7a7;
+$quinary_text_color: white;
+$senary_text_color: #000000;
