@@ -13,6 +13,8 @@ All the elements are in most of the cases placed centered to the page. So, it is
 
 1. [License](./LICENSE.md)
 2. [RAW CSS](https://raw.githubusercontent.com/AyushmanBilasThakur/Binod.CSS/master/dist/binod.css)
+3. [Documentation (Still in making)](https://ayushmanbilasthakur.github.io/Binod.CSS/docs/)
+4. [How to Contribute](./CONTRIBUTING.md)
 
 ## Similar Binod Projects
 
