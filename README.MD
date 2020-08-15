@@ -1,6 +1,6 @@
-# Bindo.CSS - A CSS on an Overused Meme
+# Binod.CSS - A CSS on an Overused Meme
 
-Binod.CSS is a CSS library based on the wildly popular and overused "Binod" meme.
+Binod.CSS is a CSS library based on the wildly popular and overused as well as overrated "Binod" meme.
 
 ## How to use this library
 
